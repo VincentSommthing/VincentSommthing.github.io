@@ -83,16 +83,24 @@ class Game {
                 var newI = i + !this.numberOnTop; //+1 if there is number on side
                 var newJ = j + this.numberOnTop; //+1 if there is number on top
                 var sx = this.gw * (newI/this.newW - 0.5) + 0.5*this.sl + this.x; //x pos of square
-                var sy = this.gh * (newJ/this.newH - 0.5) + 0.5*this.sl + this.y; //y pos of square poo
+                var sy = this.gh * (newJ/this.newH - 0.5) + 0.5*this.sl + this.y; //y pos of square
                 this.squares[i][j].display(sx, sy, this.sl);
             }
         }
         
         //display number
-        fill(255);
+        fill(0, 255, 0);
         if(this.numberOnTop) {
-            text(this.numbers[0], this.x, 0.5*this.sl);
+            var x = this.x;
+            var y = this.y - 0.5*this.gh + 0.5*this.sl;
+            rect(x, y, this.sl, this.sl, this.sl*0.1);
+            fill(0);
+            text(this.numbers[0], x, y);
         } else {
+            x = this.x - 0.5*this.gw + 0.5*this.sl;
+            y = this.y;
+            rect(x, y, this.sl, this.sl, this.sl*0.1);
+            fill(0);
             text(this.numbers[0], 0.5*this.sl, this.y);
         }
     }
