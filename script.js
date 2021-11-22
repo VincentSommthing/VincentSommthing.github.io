@@ -8,6 +8,8 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "images.json", true);
 xhttp.send();
 
+const imgListEl = document.getElementById("imgList");
+
 function setUpImages(stuff) {
 	imgs = JSON.parse(stuff);
 	//shuffle images
@@ -23,8 +25,9 @@ function setUpImages(stuff) {
 
 //https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
 function createImage(item) {
-	const newImage = document.createElement('img');
-	newImage.setAttribute("src", item.url)
-	newImage.style.width = "100%"
-	document.body.appendChild(newImage);
+	const newImage = document.createElement("img");
+	newImage.className += "equalSpacing";
+	newImage.setAttribute("src", item.url);
+	newImage.style.width = "100%";
+	imgListEl.appendChild(newImage)
 }
