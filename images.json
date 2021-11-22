@@ -1,17 +1,53 @@
 [
 	{
 		name:"light mandelbulb",
-		url:"https://i.imgur.com/wtIDUEo.jpg",
-		w:1920,
-		h:1080},
+		url:"https://i.imgur.com/wtIDUEo.jpg"},
 	{
 		name:"epic mandelbulb",
-		url:"https://i.imgur.com/J4XtudT.jpg",
-		w:1920,
-		h:1080},
+		url:"https://i.imgur.com/J4XtudT.jpg"},
 	{
 		name:"small mandelbulb",
-		url:"https://i.imgur.com/Dg2iRVD.jpg",
-		w:1920,
-		h:1080}
+		url:"https://i.imgur.com/Dg2iRVD.jpg"},
+	{
+		name:"fidget mesa wood",
+		url:"https://i.imgur.com/u4QBDR8.png"},
+	{
+		name:"fidget mesa wood 2",
+		url:"https://i.imgur.com/sZ14ib3.png"},
+	{
+		name:"fidget mesa plaster",
+		url:"https://i.imgur.com/2iQ4F0m.png"},
+	{
+		name:"motion tracking",
+		url:"https://i.imgur.com/SIYvS7L.gif"},
+	{
+		name:"balloon",
+		url:"https://i.imgur.com/K3IjF2c.gif"},
+	{
+		name:"gold jello",
+		url:"https://i.imgur.com/dMt931r.gif"},
+	{
+		name:"rock caustics",
+		url:"https://i.imgur.com/DNXfbmj.gif"},
+	{
+		name:"rainbow caustics",
+		url:"https://i.imgur.com/aAMXJ3H.png"},
+	{
+		name:"simple caustics",
+		url:"https://i.imgur.com/IyU6nQo.png"},
+	{
+		name:"toilet wallpaper",
+		url:"https://i.imgur.com/crJGaZA.png"},
+	{
+		name:"chunky liquid",
+		url:"https://i.imgur.com/QTPqbfH.gif"},
+	{
+		name:"fire monkey",
+		url:"https://i.imgur.com/kuCO9b8.gif"},
+	{
+		name:"orange juice",
+		url:"https://i.imgur.com/fVlfimA.png"},
+	{
+		name:"anvil",
+		url:"https://i.imgur.com/aSAmjM0.png"},
 ]
