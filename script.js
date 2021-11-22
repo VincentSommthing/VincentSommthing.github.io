@@ -25,9 +25,15 @@ function setUpImages(stuff) {
 
 //https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
 function createImage(item) {
+
 	const newImage = document.createElement("img");
 	newImage.className += "equalSpacing";
 	newImage.setAttribute("src", item.url);
 	newImage.style.width = "100%";
-	imgListEl.appendChild(newImage)
+
+	const imgContainer = document.createElement("div");
+	imgContainer.className += "imgContainer";
+	imgContainer.appendChild(newImage);
+
+	imgListEl.appendChild(imgContainer);
 }

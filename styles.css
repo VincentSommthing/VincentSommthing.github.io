@@ -1,0 +1,40 @@
+body {
+	background-color: black;
+	margin: 0px;
+	padding: 0px;
+}
+
+#columnL {
+	width: 50%;
+	float: left;
+}
+#columnR {
+	width: 50%;
+	float: right;
+}
+#imgList {
+	padding: 3px;
+	margin:0px;
+	column-count: 2;
+	column-gap: 0px;
+	font-size: 0;
+}
+
+/* https://codepen.io/nxworld/pen/ZYNOBZ */
+.imgContainer {
+	overflow:hidden;
+	margin:0px;
+	padding:3px;
+}
+img {
+	margin:0px;
+	padding: 0px
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+img:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
