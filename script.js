@@ -2,19 +2,20 @@
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && (this.status == 200 | this.status == 0)) {
-       setUpImages(JSON.parse(xhttp.responseText));
+       setUpImages(xhttp.responseText);
     }
 };
 xhttp.open("GET", "images.json", true);
 xhttp.send();
 
-function setUpImages() {
+function setUpImages(stuff) {
+	imgs = JSON.parse(stuff);
 	//shuffle images
 	var shuffled = [];
-	for(var i = images.length-1; i>=0; i--) {
-		const index = Math.floor(Math.random()*images.length);
-		shuffled.push(images[index]);
-		images.splice(index,1);
+	for(var i = imgs.length-1; i>=0; i--) {
+		const index = Math.floor(Math.random()*imgs.length);
+		shuffled.push(imgs[index]);
+		imgs.splice(index,1);
 	}
 
 	shuffled.forEach(createImage);
