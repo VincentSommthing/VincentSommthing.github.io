@@ -1,0 +1,17 @@
+[
+	{
+		name:"light mandelbulb",
+		url:"https://i.imgur.com/wtIDUEo.jpg",
+		w:1920,
+		h:1080},
+	{
+		name:"epic mandelbulb",
+		url:"https://i.imgur.com/J4XtudT.jpg",
+		w:1920,
+		h:1080},
+	{
+		name:"small mandelbulb",
+		url:"https://i.imgur.com/Dg2iRVD.jpg",
+		w:1920,
+		h:1080}
+]
