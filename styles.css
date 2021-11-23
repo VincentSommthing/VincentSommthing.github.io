@@ -7,10 +7,21 @@ body {
 #imgList {
 	padding: 3px;
 	margin:0px;
-	column-count: 2;
-	column-gap: 0px;
 	font-size: 0;
 	z-index: 0;
+}
+
+@media screen and (orientation:portrait) {
+	#imgList {
+		padding:10px;
+	}
+}
+@media screen and (orientation:landscape) {
+	#imgList {
+		padding: 3px;
+		column-count: 2;
+		column-gap: 0px;
+	}
 }
 
 /* https://codepen.io/nxworld/pen/ZYNOBZ */
